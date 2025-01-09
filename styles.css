@@ -1,0 +1,228 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007b7f;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.active {
+    text-decoration: underline;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005f60;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #003d3f;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-left: 50px;
+    background: url('images/viet-nam_background.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background: url('images/viet-nam_background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.team-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.team-card p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.team-role {
+    font-weight: bold;
+    color: #007b7f;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px 20px;
+    background: url('images/viet-nam_background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007b7f;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f60;
+}
