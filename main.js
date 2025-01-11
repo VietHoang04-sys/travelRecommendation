@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle search
     searchButton.addEventListener("click", () => {
         const query = searchInput.value.toLowerCase();
-        const results = [];
+        let results = [];
 
-        // Search in countries, cities, temples, and beaches
-        Object.values(travelData).forEach(category => {
-            category.forEach(entry => {
-                if (
-                    entry.name.toLowerCase().includes(query) ||
-                    (entry.cities && entry.cities.some(city => city.name.toLowerCase().includes(query)))
-                ) {
-                    results.push(entry);
+        if (query === "beach") {
+            results = travelData.beaches;
+        } else if (query === "temple") {
+            results = travelData.temples;
+        } else {
+            Object.values(travelData.countries).forEach(country => {
+                if (country.name.toLowerCase().includes(query)) {
+                    results = results.concat(country.cities);
                 }
             });
-        });
+        }
 
         displayResults(results);
     });
@@ -60,6 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
     clearButton.addEventListener("click", () => {
         searchInput.value = "";
         resultsContainer.innerHTML = ""; // Clear results
-        // Optionally, reset to default content if needed
     });
 });
